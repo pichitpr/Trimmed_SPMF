@@ -115,7 +115,7 @@ public class AlgoPrefixSpanGen<T extends Comparable<T>>{
 	 * @return return the result, if saved into memory, otherwise null 
 	 * @throws IOException  exception if error while writing the file
 	 */
-	public SequentialPatternsGen<T> runAlgorithm(SequenceDatabaseGen<T> database, String outputFilePath, int minsup) throws IOException {
+	public SequentialPatternsGen<T> runAlgorithm(SequenceDatabaseGen<T> database, int minsup, String outputFilePath) throws IOException {
 		// initialize variables for statistics
 		patternCount =0;
 		MemoryLogger.getInstance().reset();

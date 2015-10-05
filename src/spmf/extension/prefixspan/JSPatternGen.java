@@ -65,6 +65,10 @@ public class JSPatternGen<T extends Comparable<T>> {
 		return sequencesIds;
 	}
 	
+	public int getTag(){
+		return tag;
+	}
+	
 	@Override
 	public String toString(){
 		StringBuilder s = new StringBuilder("< ");
